@@ -1,0 +1,68 @@
+#accordion {
+    .accordion-menu {
+        width: 100%
+    }
+
+    .accordion-menu li.open .dropdownlink {
+        font-family: 'Libre Baskerville';
+        color: $blue;
+        background: white;
+
+        .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accordion-menu li:last-child .dropdownlink {
+        border-bottom: 0;
+    }
+
+    .dropdownlink {
+        font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue';
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: white;
+        font-family: 'Libre Baskerville';
+        transition: $tr;
+        padding: 15px 5px;
+        position: relative;
+
+        &:hover {
+            background: white;
+            color: $blue;
+        }
+
+        i {
+            position: absolute;
+            top: 17px;
+            left: 16px;
+        }
+
+        .fa-chevron-down {
+            right: 12px;
+            left: auto;
+        }
+    }
+
+    .submenuItems {
+        display: none;
+        background: $blue;
+
+        li {
+            border-bottom: 1px solid white;
+        }
+    }
+
+    .submenuItems a {
+        cursor: pointer;
+        font-family: 'Libre Baskerville';
+        display: block;
+        color: white;
+        padding: 12px 12px 12px 45px;
+        transition: $tr;
+    }
+}

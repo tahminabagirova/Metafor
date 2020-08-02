@@ -1,0 +1,352 @@
+  // message 
+
+  .message {
+      max-width: 100%;
+      position: fixed;
+      bottom: 0;
+      right: 100px;
+      border-radius: 3px;
+      z-index: 5000;
+      display: block;
+      opacity: 0.6;
+
+      &.active {
+          opacity: 1;
+      }
+
+      .icon {
+          width: 20px;
+          height: 20px;
+          display: block;
+          position: relative;
+          top: 36px;
+          right: -340px;
+          cursor: pointer;
+
+          path {
+              fill: white;
+          }
+
+          @media (max-width:499.9px) {
+              right: -90%;
+
+          }
+
+          @media (max-width: 991.9px) {
+              display: none;
+          }
+      }
+
+      @media (max-width:575.9px) {
+          right: 0;
+      }
+  }
+
+  .message .c_h {
+      cursor: pointer;
+      border-radius: 0px;
+      //   background:#c61432;
+      line-height: 34px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+
+  }
+
+
+  .message .right_c {
+      text-align: center;
+      /*background:#DE4A4A;*/
+      width: 380px;
+      height: 50px;
+      // margin-right: 45px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      background: #0060a08c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $tr;
+
+      &.active {
+          background: $blue;
+      }
+
+      p {
+          font-size: 25px;
+          color: white;
+          font-family: 'Libre Baskerville';
+
+      }
+
+
+      @media (max-width:575.9px) {
+          width: 100vw;
+          margin: 0;
+      }
+  }
+
+  .right_c:hover {
+      background: $blue;
+      width: 380px;
+      // margin-right: 45px;
+
+      @media (max-width:499.9px) {
+          width: 100vw;
+          margin: 0;
+      }
+  }
+
+
+  // .clear {
+  //     clear: both;
+  // }
+
+  #chat_container {
+      display: block;
+      // margin-right: 45px;
+      max-width: 100%;
+      width: 380px;
+      height: 480px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      background-color: var(--white);
+      padding: 22px 22px 26px 22px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      @media (max-width:991.9px) {
+          display: none;
+      }
+
+      .message-header {
+          h3 {
+              font-family: Roboto;
+              font-size: 25px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              font-family: 'Libre Baskerville';
+              color: #106ca9;
+              text-align: center;
+
+              @media (max-width: 499.9px) {
+                  font-size: 20px;
+              }
+          }
+
+          .message-title {
+              border-bottom: 0.5px solid #106ca9;
+              margin: 0 auto;
+              width: 100%;
+              position: relative;
+              padding-bottom: 20px;
+
+
+              @media (max-width: 767.9px) {
+                  border: none;
+                  padding: 0;
+              }
+          }
+
+          .message-title::after {
+              content: '';
+              border-bottom: 3px solid #106ca9;
+              border-radius: 2px;
+              width: 150px;
+              display: block;
+              margin: 0 auto;
+              position: absolute;
+              left: 27%;
+              top: 49px;
+
+
+              @media (max-width: 767.9px) {
+                  display: none;
+              }
+          }
+
+          p {
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              font-family: 'Libre Baskerville';
+              color: #000000;
+              margin-top: 20px;
+              margin-bottom: 14px;
+
+              @media (max-width: 499.9px) {
+                  margin: 10px 0 0 0;
+              }
+          }
+      }
+
+      #chat-form {
+
+          .message-input {
+              width: 100%;
+              height: 30px;
+              border: none;
+              border-bottom: solid 0.5px #b4b4b4;
+              outline: none !important;
+              margin: 10px 0 0 0;
+
+              &::placeholder {
+                  font-family: 'Libre Baskerville';
+
+              }
+          }
+
+          input[type=number]::-webkit-inner-spin-button,
+          input[type=number]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+          }
+
+          .message-body-p {
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              font-family: 'Libre Baskerville';
+              color: #000000;
+              margin-top: 20px;
+          }
+
+          .message-radio-button {
+              display: flex;
+              margin: 15px 0 44px 0;
+
+              // .message-radio-button-child{
+              //     display: flex;
+              //     align-items: center;
+              //     margin-right: 20px;
+              //     p{
+              //         margin: 0 0 0 8px !important;
+              //     }
+              // }  
+
+
+
+
+              .message-radio-button-child {
+                  display: block;
+                  position: relative;
+                  padding-left: 25px;
+                  margin-bottom: 12px;
+                  margin-right: 20px;
+                  cursor: pointer;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+
+                  font-size: 15px;
+                  font-weight: 300;
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: normal;
+                  letter-spacing: normal;
+                  font-family: 'Libre Baskerville';
+                  color: #797979;
+              }
+
+              /* Hide the browser's default radio button */
+              .message-radio-button-child input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+              }
+
+              /* Create a custom radio button */
+              .checkmark {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 18px;
+                  width: 18px;
+                  border: 1px solid $blue;
+                  border-radius: 50%;
+              }
+
+              /* On mouse-over, add a grey background color */
+              // .message-radio-button-child:hover input~.checkmark {
+              //     background-color: #ccc;
+              // }
+
+              /* When the radio button is checked, add a blue background */
+              // .message-radio-button-child input:checked~.checkmark {
+              //     background-color: $blue;
+              // }
+
+              /* Create the indicator (the dot/circle - hidden when not checked) */
+              .checkmark:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+              }
+
+              /* Show the indicator (dot/circle) when checked */
+              .message-radio-button-child input:checked~.checkmark:after {
+                  display: block;
+              }
+
+              /* Style the indicator (dot/circle) */
+              .message-radio-button-child .checkmark:after {
+                  top: 3px;
+                  left: 3px;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background: $blue;
+              }
+
+
+              @media (max-width:499.9px) {
+                  margin: 15px 0 20px 0;
+              }
+          }
+      }
+
+      .message-button {
+          width: 100%;
+          padding: 13px 55px;
+          background-color: #106ca9;
+          font-size: 17px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          font-family: 'Libre Baskerville';
+          color: white;
+          transition: $tr;
+          text-align: center;
+
+          @media (max-width:499.9px) {
+              padding: 8px 15px;
+          }
+      }
+
+      .message-button:hover {
+          background: $blue;
+
+      }
+
+      // message //
+
+      @media (max-width:499.9px) {
+          width: 100vw;
+          margin: 0;
+          height: 440px;
+      }
+
+  }

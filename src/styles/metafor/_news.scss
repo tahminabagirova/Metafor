@@ -1,0 +1,284 @@
+#news-ns {
+    padding: 43px 0 40px;
+
+    .container {
+        width: 100%;
+
+        .news-info-card {
+            border: solid 1px #d3d3d3;
+            border-radius: 5px;
+            margin-bottom: 40px;
+
+            .news-image-info {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                @media (max-width:992px) {
+                    height: 350px;
+                }
+
+                @media (max-width:768px) {
+                    height: 300px;
+                }
+
+                @media (max-width:370px) {
+                    height: 200px;
+                }
+            }
+
+            .news-image-info-text {
+                width: 100%;
+                height: 100%;
+                padding-bottom: 20px;
+
+
+                @media (max-width:992px) {
+                    padding: 20px;
+                }
+
+                .news-first {
+                    font-size: 22px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    padding: 18px 0 22px;
+                    font-family: 'Open Sans';
+
+
+                    @media (max-width:992px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width:768px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .news-second {
+                    width: 100%;
+                    display: flex;
+
+                    @media (max-width:500px) {
+                        display: none;
+                    }
+
+                    .news-second-child {
+                        font-size: 17px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #8c8c8c;
+                        padding-right: 15px;
+                        font-family: 'Open Sans';
+
+
+                        @media (max-width:992px) {
+                            font-size: 15px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-size: 13px;
+                        }
+
+                    }
+
+                    .news-line {
+                        width: 1px;
+                        height: 15.4px;
+                        border: solid 1px #b8b8b8;
+                        color: #8c8c8c;
+                        margin-right: 13.5px;
+                        margin-top: 5px;
+                        font-family: 'Open Sans';
+
+
+                    }
+
+                    .news-second-child-blue {
+                        font-size: 17px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #00bff3;
+                        font-family: 'Open Sans';
+
+
+                        @media (max-width:992px) {
+                            font-size: 15px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .news-three {
+                    padding: 17px 0;
+                    margin: 0 53px 20px 0;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #000000;
+                        font-family: 'Open Sans';
+
+
+                        @media (max-width:992px) {
+                            font-size: 16px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .news-continue {
+                    padding: 8px 34px;
+                    background: #106ca9;
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: white;
+                    transition: $tr;
+                    margin: 0 27px 0 0;
+                    font-family: 'Open Sans';
+
+
+                    svg {
+                        width: 18px;
+                        height: 13px;
+                        margin-left: 8px;
+                    }
+
+                    @media (max-width:992px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .news-continue:hover {
+                    background: #0d598c;
+
+                }
+            }
+        }
+
+        .news-date {
+            padding: 40px 0
+        }
+
+        .calendar {
+            margin-top: 76px;
+            height: 352px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+            background-color: white;
+
+            .datepicker {
+                width: 100%;
+
+                .table-condensed {
+                    width: 100% !important;
+                    height: 100%;
+
+                    .day {
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #000000;
+                        font-family: 'Open Sans';
+
+                    }
+
+                    .prev,
+                    .next {
+                        display: none;
+                    }
+
+                    .active {
+                        background: #ff000f;
+                        color: white;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+
+                    .old,
+                    .new {
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #d1d3d5;
+                        font-family: 'Open Sans';
+
+                    }
+
+                    thead {
+                        tr:nth-child(3) {
+                            border-top: solid 1px #d1d3d5;
+                            margin-top: 20px !important;
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            font-family: 'Open Sans';
+                            color: #000000;
+                        }
+
+                        tr:nth-child(2) {
+                            th:nth-child(2) {
+                                text-align: start;
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                font-family: 'Open Sans';
+                                color: #797979;
+
+                            }
+                        }
+
+                        tr:nth-child(1) {
+                            display: none;
+                        }
+                    }
+
+                    .datepicker-switch {
+                        // width: 100%;
+                        padding: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

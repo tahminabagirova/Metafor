@@ -1,0 +1,117 @@
+#contact-ns {
+    width: 100%;
+    padding: 64px 0 83px;
+
+    .col-lg-6 {
+        @media (min-width:992px) {
+            padding: 0 !important;
+        }
+    }
+
+    .sdd {
+        @media (min-width:992px) {
+            padding-left: 15px !important;
+
+        }
+    }
+
+    .contact-address-mother {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #E5E5E5;
+        padding-top: 20px;
+
+        .contact-address-child {
+            margin-bottom: 10px;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            svg {
+                width: 33px;
+                height: 43px;
+
+                path,
+                g {
+                    fill: #0060a0;
+                }
+            }
+
+            .flag-image {
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+
+            .flag-image_1 {
+                width: 22px;
+                height: 22px;
+                object-fit: cover;
+            }
+
+            img {
+                width: 22px;
+                height: 31px;
+                margin-right: 10px;
+
+
+                @media(max-width: 499.9px) {
+                    width: 16px !important;
+                    height: 24px !important;
+                }
+
+            }
+
+            // .contact-icon{
+            //     font-size: 20px;
+            // }
+            span {
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #000000;
+                padding: 0 0 10px 21px;
+
+                @media(max-width: 768px) {
+                    font-size: 16px !important;
+                }
+            }
+        }
+
+        .contact-address-child-yellow-div {
+            width: 100%;
+            height: 100%;
+            background: $blue;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            p {
+                font-size: 30px;
+                text-align: center;
+                font-family: 'Libre Baskerville';
+                color: #fff;
+
+                @media(max-width: 992px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @media(max-width: 992px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    #map {
+        min-height: 300px;
+    }
+}

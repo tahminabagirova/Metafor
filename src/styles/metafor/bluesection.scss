@@ -1,0 +1,51 @@
+#header-blue-section {
+    width: 100%;
+    background: #106ca9;
+    padding: 25px 0;
+
+    .header-blue-h1 {
+        font-size: 25px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-family: 'Libre Baskerville';
+        color: #ffffff;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+
+        @media screen and(max-width:992px) {
+            font-size: 20px;
+        }
+
+        @media screen and(max-width:768px) {
+            font-size: 16px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        font-family: 'Libre Baskerville';
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
+        text-align: center;
+
+        @media screen and(max-width:992px) {
+            font-size: 16px;
+        }
+
+        @media screen and(max-width:768px) {
+            font-size: 14px;
+        }
+    }
+}

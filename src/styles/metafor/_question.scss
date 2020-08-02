@@ -1,0 +1,258 @@
+#question-ns {
+    padding: 43px 40px;
+
+    .container {
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 19px;
+
+            .header-div {
+                width: 6px;
+                height: 37px;
+                background-color: #00bff3;
+            }
+
+            span {
+                font-size: 23px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #000000;
+                padding-left: 7px;
+
+                @media(max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+
+        .accordion-container {
+            width: 100%;
+            position: relative;
+            height: auto;
+            margin: 10px auto;
+            margin-bottom: 60px;
+        }
+
+        .set {
+            position: relative;
+            width: 100%;
+            height: auto;
+            transition: $tr;
+        }
+
+        .asd {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000000;
+            border-bottom: solid 1px #d9d9d9;
+            padding: 9px 0;
+        }
+
+        .set>.asd>span {
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            padding: 9px 0;
+
+            @media (max-width:994px) {
+                font-size: 18px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+
+        .set>.asd i {
+            float: right;
+            margin-top: 2px;
+            transition: .4s;
+            font-family: 'Libre Baskerville';
+            color: #000000;
+            font-size: 15px;
+
+            // @media (max-width:500px) {
+            //     margin-bottom: 40px;
+            // }
+        }
+
+        // .set>a.active {
+        //     background-color: #3399cc;
+        //     color: #fff;
+        // }
+
+        .content {
+            background-color: #fff;
+            display: none;
+
+        }
+
+        .content p {
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            font-family: 'Libre Baskerville';
+            color: #5c5c5c;
+            padding: 18px 0;
+
+            @media (max-width:994px) {
+                font-size: 18px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+
+
+        // .accordion-section {
+        //     margin: 0 0 61px 0;
+
+        //     .accordion {
+        //         background: #ffffff;
+        //         width: 100%;
+        //         outline: none;
+        //         transition: $tr;
+        //         border: none;
+        //         font-size: 20px;
+        //         font-weight: normal;
+        //         font-style: normal;
+        //         font-stretch: normal;
+        //         line-height: normal;
+        //         letter-spacing: normal;
+        //         color: #000000;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         border-bottom: solid 1px #d9d9d9;
+        //         margin: 33px 0 18px 0;
+
+        //         @media(max-width: 992px) {
+        //             font-size: 16px;
+        //         }
+        //     }
+
+        //     .accordion:after {
+        //         content: '\002B';
+        //         color: #000;
+        //         font-size: 28px;
+        //         float: right;
+        //         margin-left: 5px;
+        //     }
+
+        //     .active:after {
+        //         content: "\2212";
+        //         font-size: 28px;
+        //     }
+
+        //     .panel {
+        //         padding: 0 97px 0 0;
+        //         background-color: white;
+        //         max-height: 0;
+        //         overflow: hidden;
+        //         transition: max-height 0.2s ease-out;
+
+        //         @media(max-width: 992px){
+        //             padding: 0;
+        //         }
+
+        //         p {
+        //             font-size: 20px;
+        //             font-weight: 300;
+        //             font-style: normal;
+        //             font-stretch: normal;
+        //             line-height: normal;
+        //             letter-spacing: normal;
+        //             color: #5c5c5c;
+
+        //             @media(max-width: 992px) {
+        //                 font-size: 18px;
+        //             }
+        //         }
+        //     }
+
+        // }
+
+        .coment-accordion {
+
+            .comment-input {
+                width: 100%;
+                padding: 14px;
+                border: solid 1px #dcdcdc;
+                outline: none;
+                font-size: 20px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #5c5c5c;
+
+                @media(max-width: 992px) {
+                    font-size: 16px;
+                }
+            }
+
+            input::placeholder {
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #5c5c5c;
+
+                @media(max-width: 992px) {
+                    font-size: 16px;
+                }
+            }
+
+            .comment-send-mother {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px 0 0 0;
+
+                .comment-send {
+                    border-radius: 3px;
+                    background-color: #106ca9;
+                    padding: 7px 55px;
+                    font-size: 23px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    font-family: 'Libre Baskerville';
+                    color: var(--white);
+                    transition: $tr;
+
+                    @media(max-width: 992px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .comment-send:hover {
+                    background-color: #0d598c;
+                }
+            }
+
+        }
+    }
+}

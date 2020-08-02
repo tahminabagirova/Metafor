@@ -1,0 +1,128 @@
+.service-search-header {
+    display: flex;
+    align-items: center;
+
+    .search-blue-div {
+        width: 6px;
+        height: 37px;
+        background-color: #00bff3;
+    }
+
+    p {
+        font-size: 23px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-family: 'Libre Baskerville';
+        color: #000000;
+        margin-left: 7px;
+    }
+}
+
+#form {
+    border-radius: 29px;
+    height: 50px;
+    display: flex;
+    border: solid 1px #c5b3b3;
+    margin: 40px 0 17px;
+
+    .service-search-input {
+        border-radius: 29px;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    button {
+        border-top-right-radius: 29px;
+        border-bottom-right-radius: 29px;
+        padding: 11px 34px;
+        border: none;
+        background: #106ca9;
+        font-family: 'Libre Baskerville';
+        color: white;
+        outline: none !important;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+}
+
+.search-news-mother {
+    display: flex;
+    flex-wrap: wrap;
+
+    .search-news-child {
+        display: flex;
+        margin: 15px 0;
+
+        .search-news-image {
+            height: 71px;
+
+            @media (max-width:767.9px){
+                height:160px;
+            }
+
+            @media (min-width:767.9px){
+                padding-left:0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .search-news-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 5px;
+            // padding: 0 27px 12px 18px;
+
+            @media (max-width:767.9px){
+                margin-top:20px;
+            }
+
+           
+
+            .search-text-first {
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #00bff3;
+
+                @media(max-width:992px) {
+                    font-size: 16px;
+                }
+
+                @media(max-width:768px) {
+                    font-size: 14px;
+                }
+            }
+
+            .search-text-second {
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #aeaeae;
+            }
+        }
+    }
+}

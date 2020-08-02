@@ -1,0 +1,1035 @@
+#home_page {
+
+    //M A I N   S E C T I O N
+    .main-section {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: 1;
+        position: relative;
+
+        //O V E R L A Y
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            background-color: #106ca996;
+            z-index: -99;
+        }
+
+        //M A I N   T E X T
+        .main-txt {
+
+            h1 {
+
+                font-size: 1.5em;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #fff;
+                z-index: 5 !important;
+                font-family: 'Libre Baskerville';
+                padding: 79px 0 2px 0;
+
+                @media (max-width:767.9px) {
+                    font-size: 22px;
+                }
+            }
+
+            .main-first-p-item {
+
+                font-size: 3.15em;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ffffff;
+                font-family: 'Libre Baskerville';
+                padding-bottom: 11px;
+
+                @media (max-width:1199.9px) {
+                    font-size: 18px;
+                }
+            }
+
+            .main-last-p-item {
+
+                font-size: 1.111em;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: #ffffff;
+
+                @media (max-width:1199.9px) {
+                    font-size: 15px;
+                }
+
+                // @media (max-width:500px) {
+                //     display: none;
+                // }
+            }
+        }
+
+        //M A I N   B U T T O N S
+        .main-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 0 121px 0;
+
+            a {
+                display: block;
+                color: white;
+                border: solid 2px #ffffff;
+                font-family: 'Libre Baskerville';
+
+                font-size: 25px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                padding: 5px 0;
+                text-align: center;
+                margin: 0 30px;
+                transition: 0.4s;
+                min-width: 255px;
+
+                &:hover {
+                    background: white;
+                    color: black;
+                }
+            }
+
+            & :nth-child(1) {
+                margin: 0;
+            }
+
+            & :nth-child(3) {
+                margin: 0;
+
+                @media screen and (max-width:991.9px) and (min-width:767.9px) {
+                    margin-top: 30px;
+                }
+            }
+
+            @media (max-width:767.9px) {
+                flex-direction: column;
+
+                a {
+                    width: 100% !important;
+                    margin: 10px 0 !important;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+    //N E W S   S E C T I O N
+    .news-section {
+        margin-top: 100px;
+
+        .news-img-cont {
+            width: 350px;
+            height: 316px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media(max-width:766.9px) {
+                width: 100%;
+            }
+        }
+
+        .news-inner {
+            margin-top: 30px;
+        }
+
+        .col-lg-7 {
+            @media (max-width:991.9px) {
+                margin-top: 25px;
+            }
+        }
+
+        p:nth-child(1) {
+
+            font-size: 26px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            font-family: 'Libre Baskerville';
+            margin-bottom: 18px;
+        }
+
+        p:nth-child(2) {
+            font-size: 18px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            font-family: 'Open Sans';
+
+            color: #000000;
+        }
+
+        .news-btn {
+            margin-top: 23px;
+            position: relative;
+            width: fit-content;
+
+            &:nth-child(1) {
+                div {
+                    width: 40px;
+                    height: 3px;
+                    background: #000;
+                }
+            }
+
+            a {
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: white;
+                background-color: $red;
+                padding: 6px 62px;
+                font-family: 'Open Sans';
+
+                border: none;
+            }
+
+            .top-border::before {
+                position: absolute;
+                content: '';
+                display: block;
+                top: 0;
+                left: 0;
+                background: $red;
+                width: 0%;
+                height: 3px;
+                transition: $tr;
+            }
+
+            .top-border::after {
+                position: absolute;
+                content: '';
+                display: block;
+                top: 0;
+                left: 0;
+                background: $red;
+                width: 3px;
+                height: 0%;
+                transition: $tr;
+            }
+
+            .bottom-border::before {
+                position: absolute;
+                content: '';
+                display: block;
+                bottom: 0;
+                right: 0;
+                background: $red;
+                width: 0%;
+                height: 3px;
+                transition: $tr;
+            }
+
+            .bottom-border::after {
+                position: absolute;
+                content: '';
+                display: block;
+                bottom: 0;
+                right: 0;
+                background: $red;
+                width: 3px;
+                height: 0%;
+                transition: $tr;
+            }
+
+            &:hover {
+                .top-border::before {
+                    width: 40%;
+                }
+
+                .top-border::after {
+                    height: 83%;
+                }
+
+                .bottom-border::before {
+                    width: 40%;
+                }
+
+                .bottom-border::after {
+                    height: 83%;
+                }
+            }
+        }
+
+        #news-slogan {
+            margin: 0;
+            font-size: 46px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: $blue;
+            font-family: 'Libre Baskerville';
+
+            strong {
+                color: $blue;
+                font-weight: 700;
+                font-size: 50px;
+            }
+        }
+
+    }
+
+
+    //B R E N D   S E C T I O N
+    .brend-section {
+        margin-top: 67px;
+
+        .owl-stage {
+            @media(min-width:1199.9px) {
+                margin: 15px 0;
+            }
+        }
+
+        //m i n i   t i t l e s
+        #mini_titles {
+            margin-top: 62px;
+            margin-bottom: 35px;
+        }
+
+        .brend-items {
+            background-color: #00bff3;
+            padding: 52px 0;
+            margin-top: 30px;
+
+            .parent-brend-items {
+                .parent-item {
+                    @media (min-width:1199.9px){
+                    border: 1px white solid;
+                    }
+                    transition: $tr;
+                }
+
+
+                .items {
+                    // width: 202px;
+                    height: 202px;
+                    background: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: $tr;
+                    padding: 0 16px;
+                    display: block;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    @media (max-width:1199.9px) {
+                        margin: 20px 0;
+                    }
+                }
+
+
+
+                // @media (max-width:1199.9px) {
+                //     display: none;
+                // }
+
+
+            }
+        }
+
+
+        //Mobile brend items
+        // .mobile-brend-items {
+        //     width: 100%;
+
+        //     .items {
+        //         width: 180px;
+        //         height: 180px;
+        //         background: white;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+
+        //         img {
+        //             width: 80%;
+        //             height: 80%;
+        //             object-fit: contain;
+        //         }
+
+        //         @media (max-width:1199.9px) {
+        //             margin: 15px 0;
+        //         }
+
+        //         @media (max-width:499.9px) {
+        //             width: 100% !important;
+        //         }
+        //     }
+
+        //     @media (min-width:1199.9px) {
+        //         display: none;
+        //     }
+        // }
+    }
+
+
+    //P R O M I S E   S E C T I O N
+    .promise-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 460px;
+        margin-bottom: 60px;
+
+        .owl-carousel {
+            position: relative;
+
+            .owl-prev {
+                position: absolute;
+                top: 50%;
+                left: 20px;
+            }
+
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+            }
+        }
+
+
+        .promise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #0361a081;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .inner-promise {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+
+
+            .promise-title {
+
+                font-size: 35px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                text-align: center;
+                color: white;
+                z-index: 7;
+
+
+                h2 {
+                    @media (max-width: 767.9px) {
+                        font-size: 20px !important;
+                    }
+                }
+
+            }
+
+            .promise-txts {
+                z-index: 7;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+
+                    font-size: 30px;
+                    font-weight: normal;
+                    font-style: italic;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    font-family: 'Libre Baskerville';
+                    color: white;
+
+                    @media (max-width: 767.9px) {
+                        font-size: 19px !important;
+                        text-align: center;
+                    }
+                }
+
+                span {
+
+                    font-size: 30px;
+                    font-weight: 500;
+                    font-style: italic;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    font-family: 'Libre Baskerville';
+                    color: white;
+
+                    @media (max-width: 767.9px) {
+                        font-size: 19px !important;
+                    }
+                }
+            }
+
+            .promise-btn {
+                z-index: 7;
+
+                a {
+                    display: block;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: white;
+                    border: solid 1.5px white;
+                    z-index: 7;
+                    font-family: 'Libre Baskerville';
+                    padding: 11px 14px;
+                    transition: $tr;
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //S I S T E M S   S E C T I O N
+    .sistems-section {
+        background: white;
+        margin-bottom: 67px;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .other {
+            svg {
+                .st1 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #00BFF3;
+                }
+            }
+        }
+
+        .card-sistem {
+            width: 100%;
+            height: 190px;
+            border-radius: 10px;
+            background-color: #ebebeb;
+            transition: $tr;
+            display: block;
+
+            svg {
+                width: 100%;
+                height: 80%;
+
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #00BFF3;
+                }
+
+                path {
+                    transition: $tr;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                font-family: 'Libre Baskerville';
+                color: black;
+                text-align: center;
+                transition: $tr;
+
+                @media (max-width:991.9px) {
+                    font-size: 13px !important;
+                }
+            }
+
+            &:hover {
+                background-color: #00bff3;
+
+                p {
+                    font-family: 'Libre Baskerville';
+                    color: white;
+                }
+
+                svg path {
+                    fill: white;
+                }
+            }
+
+            @media (max-width:991.9px) {
+                margin: 20px 0;
+            }
+        }
+    }
+
+
+
+    //P R O J E C T S   S E C T I O N
+    .projects-section {
+        .project_carousel {
+            margin: 60px 0;
+
+            .project_item {
+                border: 1px solid red;
+
+                .imgHolder {
+                    width: 100%;
+                    padding-top: 71%;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+            }
+
+            .owl-item.active {
+                background-color: wheat;
+
+                // &:nth-of-class(2),
+                // &:nth-of-class(4){
+                //     background-color: wheat;
+                // }
+            }
+        }
+    }
+
+
+
+    //OTHERS SECTION
+    .others-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 698px;
+        padding: 20px 0;
+        margin-top: 60px;
+
+
+        .promise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #0361a081;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+
+            .promise-title {
+
+                font-size: 35px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                font-family: 'Libre Baskerville';
+                color: white;
+                z-index: 7;
+
+
+                h2 {
+                    @media (max-width: 767.9px) {
+                        font-size: 20px !important;
+                    }
+                }
+
+
+            }
+
+            .others-items {
+                z-index: 7 !important;
+
+                .row {
+
+                    .card-date {
+                        background: white;
+                        height: 381px;
+                        padding: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .top-card-date {
+                            display: flex;
+                            align-items: center;
+                            // margin: 0 0 20px 0;
+
+                            p {
+                                z-index: 7;
+                                font-size: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                font-family: 'Libre Baskerville';
+                                color: #ff000e;
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+
+                            svg {
+                                height: 37px;
+                                width: 36px;
+                                margin-right: 12px;
+
+                                path {
+                                    fill: #ff000e;
+                                }
+                            }
+                        }
+
+                        .bottom-and-main {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            height: 100%;
+                            align-items: center;
+
+                            .news-title-p {
+                                font-size: 26px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                font-family: 'Libre Baskerville';
+                                color: #000000;
+
+                            }
+                        }
+
+                        .main-card-date {
+                            p {
+                                font-size: 22px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                font-family: 'Libre Baskerville';
+                                color: #000000;
+                                word-wrap: break-word;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                /* fallback */
+                                -webkit-line-clamp: 10;
+                                /* number of lines to show */
+                                -webkit-box-orient: vertical;
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+                        }
+
+                        .bottom-card-date {
+                            a {
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #0060a0;
+                                font-family: 'Libre Baskerville';
+                                transition: $tr;
+                                position: relative;
+
+                                &:hover svg {
+                                    opacity: 1;
+                                    right: -35px;
+                                }
+
+                                svg {
+                                    height: 12.9px;
+                                    width: 20px;
+                                    opacity: 0;
+                                    position: absolute;
+                                    right: -10px;
+                                    bottom: 3px;
+                                    transition: $tr;
+
+
+                                    .st0 {
+                                        fill: none;
+                                        stroke: #0060a0;
+                                        stroke-linecap: round;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st1 {
+                                        fill: none;
+                                        stroke: #0060a0;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 10;
+                                    }
+                                }
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+                        }
+
+
+
+                    }
+                }
+
+                @media (max-width: 991.9px) {
+                    display: none;
+                }
+            }
+
+            // others items mobile
+            .others-items-mobile {
+                .carousel-item {
+                    z-index: 99;
+
+                    .card-date {
+                        background: white;
+                        height: 381px;
+                        padding: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .top-card-date {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 0 20px 0;
+
+                            p {
+                                z-index: 7;
+                                font-size: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                font-family: 'Libre Baskerville';
+                                color: #ff000e;
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+
+                            svg {
+                                height: 37px;
+                                width: 36px;
+                                margin-right: 12px;
+
+                                path {
+                                    fill: #ff000e;
+                                }
+                            }
+                        }
+
+                        .bottom-and-main {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 100%;
+                            align-items: center;
+                        }
+
+                        .main-card-date {
+                            p {
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #000000;
+                                word-wrap: break-word;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                /* fallback */
+                                -webkit-line-clamp: 3;
+                                /* number of lines to show */
+                                -webkit-box-orient: vertical;
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+                        }
+
+                        .bottom-card-date {
+                            a {
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #0060a0;
+                                transition: $tr;
+                                position: relative;
+
+                                &:hover svg {
+                                    opacity: 1;
+                                    right: -35px;
+                                }
+
+                                svg {
+                                    height: 15px;
+                                    width: 20px;
+                                    opacity: 0;
+                                    position: absolute;
+                                    right: -10px;
+                                    bottom: 3px;
+                                    transition: $tr;
+
+
+                                    .st0 {
+                                        fill: none;
+                                        stroke: #0060a0;
+                                        stroke-linecap: round;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st1 {
+                                        fill: none;
+                                        stroke: #0060a0;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 10;
+                                    }
+                                }
+
+                                @media (max-width:1199.9px) {
+                                    font-size: 18px !important;
+                                }
+                            }
+                        }
+
+
+                        @media (max-width:991.9px) {
+                            height: 220px !important;
+                        }
+                    }
+
+                }
+
+                .carusel {
+
+                    .carousel-control-prev,
+                    .carousel-control-next {
+                        color: black;
+                        z-index: 999;
+                    }
+                }
+
+                @media (min-width: 991.9px) {
+                    display: none;
+                }
+            }
+
+
+            .promise-btn {
+                z-index: 7;
+
+                a {
+
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    font-family: 'Libre Baskerville';
+                    color: white;
+                    border: solid 1.5px white;
+                    z-index: 7;
+                    padding: 11px 14px;
+                    transition: $tr;
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            height: 100% !important;
+        }
+    }
+
+    .contact-section {
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,79 @@
+#service-ns {
+    width: 100%;
+    padding: 35px 0 0 0;
+
+    .container {
+        font-family: 'Libre Baskerville';
+        color: black;
+
+        .service-card {
+            margin-bottom: 40px;
+            display: block;
+
+            .service-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 33px;
+
+                .service-line {
+                    width: 6px;
+                    height: 37px;
+                    background-color: #00bff3;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    font-family: 'Libre Baskerville';
+                    color: #000000;
+                    margin-left: 7px;
+                }
+            }
+
+            .service-image {
+                width: 100%;
+                height: 218px;
+                margin-bottom: 8px;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform .5s ease;
+                }
+            }
+
+            .service-image:hover img {
+                transform: scale(1.1);
+            }
+
+            .service-text {
+                ul {
+                    padding-left: 20px;
+
+                    li {
+                        font-family: 'Libre Baskerville';
+                        color: #106ca9;
+                        font-size: 15px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #106ca9;
+                        padding-bottom: 4px;
+                    }
+
+                    .service-gray-li {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}
